@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mualim Interiors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1>Mualim Interiors</h1>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <div class="website-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                            <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                        </a>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" class="nav-link" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" class="nav-link active" data-translate="nav-portfolio">Portfolio</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-controls">
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                            <span class="lang-current">EN</span>
+                        </button>
+                        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="Contact.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <!-- <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-translate="projects-page-title">A Showcase of Mastery and Modern Design</h1>
+                        <p class="hero-subtitle" data-translate="projects-page-subtitle">Every project by Mualim Interiors tells a story — of innovation, precision, and timeless design.</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Projects Filter -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all" data-translate="filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential" data-translate="filter-residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial" data-translate="filter-commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="industrial" data-translate="filter-industrial">Industrial</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-item" data-category="residential">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/jeddah-villa/600/400.jpg" alt="Jeddah Luxury Villa" data-translate-alt="project-1-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-1-title">Jeddah Luxury Villa</h3>
+                                <p class="project-category" data-translate="project-1-category">Residential</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-1-description">A stunning Mediterranean-inspired villa featuring custom clay tiles and integrated solar panels for maximum energy efficiency.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="commercial">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/riyadh-office/600/400.jpg" alt="Riyadh Corporate Tower" data-translate-alt="project-2-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-2-title">Riyadh Corporate Tower</h3>
+                                <p class="project-category" data-translate="project-2-category">Commercial</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-2-description">A modern commercial complex with innovative metal roofing designed to withstand extreme weather conditions.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="residential">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/dubai-complex/600/400.jpg" alt="Dubai Residential Complex" data-translate-alt="project-3-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-3-title">Dubai Residential Complex</h3>
+                                <p class="project-category" data-translate="project-3-category">Residential</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-3-description">A serene residential complex featuring custom interior design solutions that complement the modern architectural design.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="industrial">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/warehouse/600/400.jpg" alt="Dammam Industrial Warehouse" data-translate-alt="project-4-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-4-title">Dammam Industrial Warehouse</h3>
+                                <p class="project-category" data-translate="project-4-category">Industrial</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-4-description">A large-scale industrial facility with specialized interior design designed for optimal temperature regulation and durability.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="commercial">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/retail-center/600/400.jpg" alt="Mecca Retail Center" data-translate-alt="project-5-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-5-title">Mecca Retail Center</h3>
+                                <p class="project-category" data-translate="project-5-category">Commercial</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-5-description">A bustling retail complex with custom interior design that enhances both aesthetic appeal and energy efficiency.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="residential">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/mansion/600/400.jpg" alt="Medina Luxury Mansion" data-translate-alt="project-6-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-6-title">Medina Luxury Mansion</h3>
+                                <p class="project-category" data-translate="project-6-category">Residential</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-translate="project-6-description">An exquisite mansion featuring custom interior design with intricate detailing that reflects traditional Arabian architecture.</p>
+                            <a href="#" class="btn-link" data-translate="project-view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-translate="projects-cta-title">Inspired by Our Work?</h2>
+                    <p class="cta-subtitle" data-translate="projects-cta-subtitle">Let's create something extraordinary together.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary" data-translate="projects-cta-btn-contact">Start Your Project</a>
+                        <a href="services.html" class="btn btn-secondary" data-translate="projects-cta-btn-services">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                                <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                            </a>
+                        </div>
+                        <p class="footer-description" data-translate="footer-description">Your Home, Crowned with Excellence. Premium interior design solutions for those who demand the very best.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-quick-links">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" data-translate="nav-portfolio">Portfolio</a></li>
+                            <li><a href="projects.html" data-translate="nav-projects">Projects</a></li>
+                            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                           <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-services">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="services.html#residential" data-translate="footer-service-1">Residential Interiors</a></li>
+                            <li><a href="services.html#commercial" data-translate="footer-service-2">Commercial Interiors</a></li>
+                            <li><a href="services.html#industrial" data-translate="footer-service-3">Industrial Interiors</a></li>
+                            <li><a href="services.html#interior" data-translate="footer-service-4">Interior Repairs & Maintenance</a></li>
+                            <li><a href="services.html#custom" data-translate="footer-service-5">Custom Interior Design</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-contact">Contact Info</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-translate="footer-address">Al-Masjid Road, Makkah, Saudi Arabia</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span data-translate="footer-phone">+966 58 245 3791</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span data-translate="footer-email">support@mualiminteriors.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span data-translate="footer-hours">Saturday – Thursday | 9:00 AM – 7:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Mualim Interiors. <span data-translate="footer-rights">All Rights Reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/966582453791" class="floating-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+966582453791" class="floating-btn phone-btn" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <button id="back-to-top" class="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

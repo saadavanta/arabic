@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Mualim Interiors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Added loading screen to services page -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1>Mualim Interiors</h1>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <div class="website-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                            <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                        </a>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" class="nav-link active" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" class="nav-link" data-translate="nav-portfolio">Portfolio</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-controls">
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                            <span class="lang-current">EN</span>
+                        </button>
+                        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="GRC Board.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <!-- <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-translate="services-page-title">Where Function Meets Aesthetic Perfection</h1>
+                        <p class="hero-subtitle" data-translate="services-page-subtitle">Each service at Mualim Interiors is crafted to bring value, elegance, and durability to your property.</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="services-overview-title">Our Premium Services</h2>
+                    <p class="section-subtitle" data-translate="services-overview-subtitle">At Mualim Interiors, we provide a full spectrum of premium interior design solutions designed for those who expect the very best.</p>
+                </div>
+                
+                <div class="services-detailed-grid">
+                    <!-- New Arabic Services -->
+                    <div class="service-detailed-card featured-service">
+                        <div class="service-detailed-image" id="gypsum">
+                            <img src="13.jpg" alt="Gypsum Board" data-translate-alt="service-gypsum-alt">
+                        </div>
+                        <div class="service-detailed-content">
+                            <h3 class="service-detailed-title" data-translate="service-gypsum-title">Gypsum Board GRC Facades</h3>
+                            <p class="service-detailed-description" data-translate="service-gypsum-description">Premium gypsum board and GRC facade solutions for modern interior design. Lightweight, durable, and aesthetically superior for residential and commercial spaces.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="service-gypsum-feature-1">Lightweight construction</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-gypsum-feature-2">Fire-resistant materials</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-gypsum-feature-3">Sound insulation</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-gypsum-feature-4">Easy installation</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card featured-service">
+                        <div class="service-detailed-image">
+                            <img src="14.jpg" alt="GRC Installation" data-translate-alt="service-grc-install-alt">
+                        </div>
+                        <div class="service-detailed-content">
+                            <h3 class="service-detailed-title" data-translate="service-grc-install-title">GRC Gypsum Board Installation</h3>
+                            <p class="service-detailed-description" data-translate="service-grc-install-description">Expert installation of GRC gypsum boards with precision and attention to detail. Our skilled craftsmen ensure flawless execution for perfect finishes.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="service-grc-install-feature-1">Professional installation</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-grc-install-feature-2">Quality assurance</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-grc-install-feature-3">Timely completion</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-grc-install-feature-4">Warranty coverage</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card featured-service">
+                        <div class="service-detailed-image">
+                            <img src="15.jpg" alt="Cornice Design" data-translate-alt="service-cornice-alt">
+                        </div>
+                        <div class="service-detailed-content">
+                            <h3 class="service-detailed-title" data-translate="service-cornice-title">Cornice Column Window Design</h3>
+                            <p class="service-detailed-description" data-translate="service-cornice-description">Elegant cornice, column, and window frame designs that enhance architectural beauty. Custom solutions for traditional and modern aesthetics.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cornice-feature-1">Custom designs</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cornice-feature-2">Architectural elegance</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cornice-feature-3">Premium materials</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cornice-feature-4">Durable finishes</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="service-detailed-card featured-service">
+                        <div class="service-detailed-image">
+                            <img src="16.jpg" alt="Cement Board" data-translate-alt="service-cement-alt">
+                        </div>
+                        <div class="service-detailed-content">
+                            <h3 class="service-detailed-title" data-translate="service-cement-title">Cement Board Facades</h3>
+                            <p class="service-detailed-description" data-translate="service-cement-description">Durable cement board facade solutions for exterior and interior applications. Weather-resistant and long-lasting for maximum protection.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cement-feature-1">Weather resistant</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cement-feature-2">Long-lasting durability</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cement-feature-3">Moisture protection</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="service-cement-feature-4">Versatile applications</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- Previous Services (Hidden by default) -->
+                    <div class="services-hidden" id="services-hidden">
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" id="residential">
+                                <img src="17.jpg" alt="Residential" data-translate-alt="service-1-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-1-title">Residential Interior Design</h3>
+                                <p class="service-detailed-description" data-translate="service-1-description">Our residential interior design solutions bring timeless elegance and protection to your home. Whether you prefer traditional clay tiles, sleek modern metal, or innovative solar-integrated panels, we ensure every interior is a statement of strength and style.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-1-feature-1">Premium material selection</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-1-feature-2">Custom design options</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-1-feature-3">Enhanced weather protection</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-1-feature-4">Energy-efficient solutions</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" id="commercial">
+                                <img src="18.jpg" alt="Commercial" data-translate-alt="service-2-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-2-title">Commercial Interior Design</h3>
+                                <p class="service-detailed-description" data-translate="service-2-description">From corporate towers to retail complexes, our commercial interior design systems are engineered to endure extreme weather and heavy loads while maintaining aesthetic appeal and energy efficiency.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-2-feature-1">Heavy-duty construction</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-2-feature-2">Minimal business disruption</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-2-feature-3">Long-term warranty options</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-2-feature-4">Custom branding solutions</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" id="industrial">
+                                <img src="19.jpg" alt="Industrial" data-translate-alt="service-3-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-3-title">Industrial Interior Design</h3>
+                                <p class="service-detailed-description" data-translate="service-3-description">We specialise in large-scale interior design for factories, warehouses, and logistics hubs. Our focus on structural integrity, temperature regulation, and noise insulation ensures optimal operational performance.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-3-feature-1">Specialized material options</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-3-feature-2">Advanced insulation solutions</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-3-feature-3">Custom drainage systems</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-3-feature-4">Equipment integration options</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" id="interior">
+                                <img src="20.jpg" alt="Repairs" data-translate-alt="service-4-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-4-title">Interior Repairs & Maintenance</h3>
+                                <p class="service-detailed-description" data-translate="service-4-description">We restore and maintain interiors with utmost care, using high-quality materials to extend their lifespan. Whether it's minor leaks or full refurbishments, we handle it with expertise.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-4-feature-1">Comprehensive inspection</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-4-feature-2">Preventive maintenance plans</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-4-feature-3">Emergency repair services</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-4-feature-4">Extended warranty options</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" >
+                                <img src="21.jpg" alt="Waterproofing" data-translate-alt="service-5-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-5-title">Interior Waterproofing & Insulation</h3>
+                                <p class="service-detailed-description" data-translate="service-5-description">Our advanced waterproofing systems protect against moisture and temperature variations, creating sustainable, cost-efficient, and weatherproof structures.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-5-feature-1">Advanced membrane technology</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-5-feature-2">Thermal insulation options</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-5-feature-3">Energy efficiency improvements</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-5-feature-4">Long-lasting protection</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <div class="service-detailed-image" id="custom">
+                                <img src="22.jpg" alt="Custom Design" data-translate-alt="service-6-image-alt">
+                            </div>
+                            <div class="service-detailed-content">
+                                <h3 class="service-detailed-title" data-translate="service-6-title">Custom Interior Design</h3>
+                                <p class="service-detailed-description" data-translate="service-6-description">We collaborate with architects and designers to craft custom interiors that complement modern and classic architecture alike — bringing individuality to every skyline.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-6-feature-1">Bespoke design solutions</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-6-feature-2">3D visualization options</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-6-feature-3">Material experimentation</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="service-6-feature-4">Unique architectural elements</span></li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary" data-translate="service-cta">Get a Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Added Show More button for previous services -->
+                <div class="show-more-container">
+                    <button id="show-more-btn" class="btn btn-secondary" data-translate="show-more">Show More Services</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="process-title">Our Process</h2>
+                    <p class="section-subtitle" data-translate="process-subtitle">From concept to completion, we ensure a seamless experience.</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title" data-translate="process-step-1-title">Consultation</h3>
+                        <p class="step-description" data-translate="process-step-1-description">We begin with a thorough consultation to understand your needs, preferences, and budget.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title" data-translate="process-step-2-title">Design & Planning</h3>
+                        <p class="step-description" data-translate="process-step-2-description">Our team creates detailed designs and plans tailored to your specific requirements.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title" data-translate="process-step-3-title">Material Selection</h3>
+                        <p class="step-description" data-translate="process-step-3-description">We help you choose the perfect materials that balance aesthetics, durability, and budget.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title" data-translate="process-step-4-title">Installation</h3>
+                        <p class="step-description" data-translate="process-step-4-description">Our skilled craftsmen execute the installation with precision and attention to detail.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3 class="step-title" data-translate="process-step-5-title">Final Inspection</h3>
+                        <p class="step-description" data-translate="process-step-5-description">We conduct a thorough inspection to ensure every aspect meets our high standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-translate="services-cta-title">Ready to Transform Your Property?</h2>
+                    <p class="cta-subtitle" data-translate="services-cta-subtitle">Contact us today for a free consultation and let's bring your vision to life.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary" data-translate="services-cta-btn-contact">Get In Touch</a>
+                        <a href="projects.html" class="btn btn-secondary" data-translate="services-cta-btn-projects">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                                <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                            </a>
+                        </div>
+                        <p class="footer-description" data-translate="footer-description">Your Home, Crowned with Excellence. Premium interior design solutions for those who demand the very best.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-quick-links">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" data-translate="nav-portfolio">Portfolio</a></li>
+                            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-services">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="services.html#residential" data-translate="footer-service-1">Residential Interiors</a></li>
+                            <li><a href="services.html#commercial" data-translate="footer-service-2">Commercial Interiors</a></li>
+                            <li><a href="services.html#industrial" data-translate="footer-service-3">Industrial Interiors</a></li>
+                            <li><a href="services.html#interior" data-translate="footer-service-4">Interior Repairs & Maintenance</a></li>
+                            <li><a href="services.html#custom" data-translate="footer-service-5">Custom Interior Design</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-contact">Contact Info</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-translate="footer-address">Al-Masjid Road, Makkah, Saudi Arabia</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span data-translate="footer-phone">+966 58 245 3791</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span data-translate="footer-email">support@mualiminteriors.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span data-translate="footer-hours">Saturday – Thursday | 9:00 AM – 7:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Mualim Interiors. <span data-translate="footer-rights">All Rights Reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Buttons and Back to Top -->
+        <a href="https://wa.me/966582453791" class="floating-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+966582453791" class="floating-btn phone-btn" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <button id="back-to-top" class="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

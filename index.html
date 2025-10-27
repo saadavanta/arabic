@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mualim Interiors - Premium Interior Design Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Added loading screen for Mualim -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1>Mualim Interiors</h1>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <div class="website-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                            <!-- Changed logo text from Haven Roofs to Mualim Interiors -->
+                            <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                        </a>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link active" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" class="nav-link" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" class="nav-link" data-translate="nav-projects">Projects</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-controls">
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                            <span class="lang-current">EN</span>
+                        </button>
+                        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="Hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-translate="hero-title">Crafting Excellence Above Every Home</h1>
+                        <p class="hero-subtitle" data-translate="hero-subtitle">Where precision, craftsmanship, and innovation converge to create architectural masterpieces that stand the test of time.</p>
+                        <div class="hero-buttons">
+                            <a href="services.html" class="btn btn-primary" data-translate="hero-btn-services">Our Services</a>
+                            <a href="contact.html" class="btn btn-secondary" data-translate="hero-btn-consultation">Free Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2 class="section-title" data-translate="intro-title">Welcome to Mualim Interiors</h2>
+                        <p class="section-subtitle" data-translate="intro-subtitle">We are not just interior designers; we are curators of protection, aesthetics, and long-lasting performance.</p>
+                        <p class="section-description" data-translate="intro-description">
+                            With every tile, shingle, and metal sheet, we sculpt reliability, redefine beauty, and reinforce trust. Mualim Interiors represents the pinnacle of interior design excellence — a symbol of endurance, elegance, and engineering brilliance. Our expertise stretches across commercial, residential, and industrial sectors, making us the premium choice for those who believe their homes deserve more than shelter — they deserve a statement.
+                        </p>
+                        <a href="about.html" class="btn-link" data-translate="intro-btn-learn-more">Learn More About Us</a>
+                    </div>
+                    <div class="intro-image">
+                        <div class="image-container">
+                            <img src="1.jpeg" alt="Luxury Interiors" data-translate-alt="intro-image-alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="features-title">Why Choose Mualim Interiors</h2>
+                    <p class="section-subtitle" data-translate="features-subtitle">Experience the difference that premium materials, expert craftsmanship, and innovative design can make.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="feature-1-title">Premium Materials</h3>
+                        <p class="feature-description" data-translate="feature-1-description">
+                            We source only the finest materials from around the world, ensuring durability, beauty, and performance that exceeds industry standards.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="feature-2-title">Expert Craftsmanship</h3>
+                        <p class="feature-description" data-translate="feature-2-description">
+                            Our team of skilled craftsmen brings decades of experience to every project, ensuring precision and attention to detail in every installation.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="feature-3-title">Innovative Solutions</h3>
+                        <p class="feature-description" data-translate="feature-3-description">
+                            We stay at the forefront of interior design technology, incorporating the latest innovations to provide solutions that are both beautiful and functional.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="feature-4-title">Sustainable Practices</h3>
+                        <p class="feature-description" data-translate="feature-4-description">
+                            We're committed to environmental responsibility, using energy-efficient materials and sustainable installation methods to protect both your home and our planet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section class="services-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="services-preview-title">Our Premium Services</h2>
+                    <p class="section-subtitle" data-translate="services-preview-subtitle">From residential sanctuaries to commercial landmarks, we deliver excellence across every sector.</p>
+                </div>
+                
+                <div class="services-preview-grid">
+                    <div class="service-preview-card">
+                        <div class="service-preview-image">
+                            <img src="2.jpg" alt="Residential Interiors" data-translate-alt="service-1-image-alt">
+                        </div>
+                        <div class="service-preview-content">
+                            <h3 class="service-preview-title" data-translate="service-1-title">Residential Interiors</h3>
+                            <p class="service-preview-description" data-translate="service-1-description">
+                                Timeless elegance and protection for your home. From traditional designs to modern solar-integrated solutions.
+                            </p>
+                            <a href="services.html" class="btn-link" data-translate="service-learn-more">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-preview-card">
+                        <div class="service-preview-image">
+                            <img src="3.jpg" alt="Commercial Interiors" data-translate-alt="service-2-image-alt">
+                        </div>
+                        <div class="service-preview-content">
+                            <h3 class="service-preview-title" data-translate="service-2-title">Commercial Interiors</h3>
+                            <p class="service-preview-description" data-translate="service-2-description">
+                                Engineered for businesses that demand excellence. Our systems endure extreme conditions while maintaining aesthetic appeal.
+                            </p>
+                            <a href="services.html" class="btn-link" data-translate="service-learn-more">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-preview-card">
+                        <div class="service-preview-image">
+                            <img src="4.jpg" alt="Industrial Interiors" data-translate-alt="service-3-image-alt">
+                        </div>
+                        <div class="service-preview-content">
+                            <h3 class="service-preview-title" data-translate="service-3-title">Industrial Interiors</h3>
+                            <p class="service-preview-description" data-translate="service-3-description">
+                                Heavy-duty solutions for factories and warehouses. We focus on structural integrity and operational performance.
+                            </p>
+                            <a href="services.html" class="btn-link" data-translate="service-learn-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services-preview-cta">
+                    <a href="services.html" class="btn btn-primary" data-translate="services-view-all">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Preview Section -->
+        <section class="projects-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="projects-preview-title">Recent Projects</h2>
+                    <p class="section-subtitle" data-translate="projects-preview-subtitle">A glimpse into our portfolio of architectural masterpieces.</p>
+                </div>
+                
+                <div class="projects-preview-slider">
+                    <div class="project-preview-card">
+                        <div class="project-preview-image">
+                            <img src="5.jpg" alt="Jeddah Luxury Villa" data-translate-alt="project-1-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-1-title">Jeddah Luxury Villa</h3>
+                                <p class="project-category" data-translate="project-1-category">Residential</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-preview-card">
+                        <div class="project-preview-image">
+                            <img src="6.jpg" alt="Riyadh Corporate Tower" data-translate-alt="project-2-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-2-title">Riyadh Corporate Tower</h3>
+                                <p class="project-category" data-translate="project-2-category">Commercial</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-preview-card">
+                        <div class="project-preview-image">
+                            <img src="7.jpg" alt="Dubai Residential Complex" data-translate-alt="project-3-image-alt">
+                            <div class="project-overlay">
+                                <h3 class="project-title" data-translate="project-3-title">Dubai Residential Complex</h3>
+                                <p class="project-category" data-translate="project-3-category">Residential</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-preview-cta">
+                    <a href="projects.html" class="btn btn-primary" data-translate="projects-view-all">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section with working carousel -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="testimonials-title">Client Testimonials</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                <h3 class="section-heading" data-translate="testimonials-heading">What Our Clients Say</h3>
+                
+                <div class="testimonial-carousel">
+                    <div class="testimonial-track">
+                        <div class="testimonial-item active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>Mualim Interiors transformed our office space beyond our expectations. Their attention to detail and craftsmanship is unmatched. Highly recommended!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person1/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Ahmed Al-Rashid</h4>
+                                    <p>CEO, Tech Solutions</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>We hired Mualim Interiors for our home renovation and couldn't be happier. The gypsum board work in our ceilings is absolutely stunning. Professional team from start to finish.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person2/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Fatima Abdullah</h4>
+                                    <p>Homeowner</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>The GRC facade they installed on our commercial building has completely transformed its appearance. Quality work and excellent project management.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person3/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Khalid Al-Mansour</h4>
+                                    <p>Property Developer</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>Outstanding service! The team completed our villa interior design on schedule and within budget. The quality of materials and workmanship exceeded our expectations.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person4/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Mohammed Al-Otaibi</h4>
+                                    <p>Villa Owner, Jeddah</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>Mualim Interiors handled our industrial warehouse project with precision and professionalism. The insulation and waterproofing solutions have been perfect for our operations.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person5/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Sara Al-Dosari</h4>
+                                    <p>Operations Manager, Logistics Hub</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>The custom interior design they created for our retail center is absolutely beautiful. It perfectly complements our brand and has impressed all our customers.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person6/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Noor Al-Shammari</h4>
+                                    <p>Retail Manager, Mecca Center</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>Excellent maintenance service! They quickly identified and fixed issues with our building's interior that we didn't even know about. Very thorough and professional.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person7/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Hassan Al-Qahtani</h4>
+                                    <p>Building Manager, Riyadh Tower</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>We've worked with Mualim Interiors on multiple projects. Their consistency in quality and reliability is unmatched. They're our go-to partner for all interior design needs.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person8/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Layla Al-Harbi</h4>
+                                    <p>Project Director, Construction Firm</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>The waterproofing and insulation work they did on our mansion is exceptional. We've had no issues with moisture or temperature control. Highly satisfied with the investment.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person9/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Amira Al-Saud</h4>
+                                    <p>Homeowner, Medina</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>From consultation to completion, Mualim Interiors provided exceptional service. Their team is knowledgeable, courteous, and delivers results that speak for themselves.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://picsum.photos/seed/person10/100/100.jpg" alt="Client">
+                                <div class="author-info">
+                                    <h4>Omar Al-Zahrani</h4>
+                                    <p>Business Owner, Dubai</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-translate="cta-title">Ready to Transform Your Property?</h2>
+                    <p class="cta-subtitle" data-translate="cta-subtitle">Contact us today for a free consultation and let's bring your vision to life.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary" data-translate="cta-btn-contact">Get In Touch</a>
+                        <a href="tel:+966582453791" class="btn btn-secondary" data-translate="cta-btn-call">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                                <!-- Changed footer logo text to Mualim Interiors -->
+                                <span class="logo-text" data-translate="logo-text">Mualim Interiors</span>
+                            </a>
+                        </div>
+                        <p class="footer-description" data-translate="footer-description">
+                            Your Home, Crowned with Excellence. Premium interior design solutions for those who demand the very best.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-quick-links">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-translate="nav-home">Home</a></li>
+                            <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                            <li><a href="services.html" data-translate="nav-services">Services</a></li>
+                            <li><a href="projects.html" data-translate="nav-projects">Projects</a></li>
+                            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                         <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-services">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="services.html#residential" data-translate="footer-service-1">Residential Interiors</a></li>
+                            <li><a href="services.html#commercial" data-translate="footer-service-2">Commercial Interiors</a></li>
+                            <li><a href="services.html#industrial" data-translate="footer-service-3">Industrial Interiors</a></li>
+                            <li><a href="services.html#interior" data-translate="footer-service-4">Interior Repairs & Maintenance</a></li>
+                            <li><a href="services.html#custom" data-translate="footer-service-5">Custom Interior Design</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" data-translate="footer-contact">Contact Info</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-translate="footer-address">Al-Masjid Road, Makkah, Saudi Arabia</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span data-translate="footer-phone">+966 58 245 3791</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span data-translate="footer-email">support@mualiminteriors.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span data-translate="footer-hours">Saturday – Thursday | 9:00 AM – 7:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <!-- Updated copyright to Mualim Interiors -->
+                    <p>&copy; 2025 Mualim Interiors. <span data-translate="footer-rights">All Rights Reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Added floating buttons and back to top button -->
+        <a href="https://wa.me/966582453791" class="floating-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+966582453791" class="floating-btn phone-btn" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <button id="back-to-top" class="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
